@@ -60,7 +60,7 @@ row,column=data.shape
 
 
 
-def CHECK_CELL_WITH_NO_CAPACITY():
+def check_cell_with_no_capacity():
     
     '''List cellsVecArr without 
         network presence They are 62 in number.'''  
@@ -82,7 +82,7 @@ def CHECK_CELL_WITH_NO_CAPACITY():
             
 
 
-def CHECK_EXCEED_CAPACITY():
+def check_exceed_capacity():
     
     '''Code to add and check exceed capacity:
     Cell that exceed the maxium capacity
@@ -108,7 +108,7 @@ def CHECK_EXCEED_CAPACITY():
 
 
 
-def GROUPING(dis=50, noDis=85):
+def grouping(dis=50, noDis=85):
         
     '''
     Code to: 
@@ -151,7 +151,7 @@ def GROUPING(dis=50, noDis=85):
 
 
 
-def PLOT_PIE_CHART():
+def plot_pie_chart():
     '''Plots the pie chart for cells due
        for discount, no discount and higher tariff per hour.
        
@@ -170,7 +170,7 @@ def PLOT_PIE_CHART():
         plt.savefig("/home/deola/Documents/Opti-Num/result/pie_%s.eps"%str(key), format="eps", dpi=300)
 
     #plt.show()
-def READING_REM():
+def reading_rem():
     '''Importing the rest of the dataset
         Into our workspace'''
     Cell=list()
@@ -199,7 +199,7 @@ def READING_REM():
         Cell.append(m.encode('ascii', 'ignore'))
     print( "'9829C'" in Cell)
 #############################################################################################
-def DATA_VISUAL():
+def data_visual():
      from pandas.tools.plotting import autocorrelation_plot
     
      
@@ -229,7 +229,7 @@ def DATA_VISUAL():
      #m.show()
      
      
-def FORECAST():
+def forecast():
     '''ARIMA model to forecast
     '''
     
@@ -278,8 +278,8 @@ def FORECAST():
 ##############################################################################################
 if __name__=="__main__":
     
-    #GROUPING()
-    #PLOT_PIE_CHART()
-    #READING_REM()
-    #DATA_VISUAL()
-    FORECAST()
+    #grouping()
+    #plot_pie_chart()
+    #reading_rem()
+    #data_visual()
+    forecast()
